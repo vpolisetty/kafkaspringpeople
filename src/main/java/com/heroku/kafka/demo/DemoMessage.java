@@ -25,7 +25,7 @@ public class DemoMessage {
 
     @JsonProperty("message")
     public String getMessage() {
-        return message;
+        return "Venkatesh P -" + message ;
     }
 
     @JsonProperty("topic")
