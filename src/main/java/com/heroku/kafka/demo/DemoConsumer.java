@@ -72,7 +72,7 @@ public class DemoConsumer implements Managed {
           queue.poll();
         }
 
-        DemoMessage message = new DemoMessage(record.value(), config.getTopic(), record.partition(), record.offset());
+        DemoMessage message = new DemoMessage("Venkatesh P - "+record.value(), config.getTopic(), record.partition(), record.offset());
 
         if (queue.offer(message)) {
           consumer.commitSync();
